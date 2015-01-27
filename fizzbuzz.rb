@@ -34,7 +34,7 @@ end
 # 	sleep 0.1
 # 	}
 
-cycle = (1..10).to_a
+cycle = (1..50).to_a
 cycle.each {
 	|number| fizzbuzz(number)
 	sleep 0.1
