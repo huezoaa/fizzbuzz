@@ -34,8 +34,16 @@ end
 # 	sleep 0.1
 # 	}
 
-cycle = (1..50).to_a
+cycle = (1..100).to_a
 cycle.each {
 	|number| fizzbuzz(number)
-	sleep 0.1
+	# sleep 0.1
 }
+
+
+
+puts ((0..100).map do |number|
+	Fizz = number % 3 ==0 ? "Fizz" : nil
+	Buzz = number % 5 ==0 ? 'Buzz' : nil
+	Fizz || Buzz ? "#{Fizz}#{Buzz}" : number
+end)
